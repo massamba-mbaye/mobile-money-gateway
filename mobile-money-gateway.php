@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Passerelle de paiement Mobile Money pour WooCommerce
-Plugin URI: https://votre-site.com/developers/wordpress
+Plugin URI: https://www.im-mass.com/plugins/mobile-money-gateway
 Description: Plugin de paiement mobile money supportant Wave et Orange Money pour WooCommerce
 Version: 1.0.0
-Author: Votre Nom
-Author URI: https://votre-site.com
+Author: Massamba MBAYE
+Author URI: https://www.im-mass.com/
 Text Domain: mobile-money-gateway
 */
 
