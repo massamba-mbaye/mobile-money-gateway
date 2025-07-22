@@ -70,8 +70,15 @@ function mmg_init_gateways()
     }
 
     // Inclusion des fichiers des passerelles
+    include_once(MMG_PLUGIN_PATH . 'includes/class-wc-mobile-money-base.php');
     include_once(MMG_PLUGIN_PATH . 'includes/class-wc-wave-gateway.php');
     include_once(MMG_PLUGIN_PATH . 'includes/class-wc-orange-money-gateway.php');
+    
+    // Inclusion du tableau de bord admin
+    if (is_admin()) {
+        include_once(MMG_PLUGIN_PATH . 'includes/class-mmg-admin-dashboard.php');
+        MMG_Admin_Dashboard::get_instance();
+    }
 }
 
 // Ajout des passerelles à WooCommerce
